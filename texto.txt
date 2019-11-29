@@ -1,0 +1,31 @@
+Palabras claves: 
+agencias, estudios en el exterior, Australia, estudiantes, trabajo en el exterior,
+vivir en el exterior, VeConecta, conecta con el mundo, 
+
+- Fotos de slide 
+--> Estudiantes
+--> Paisajes
+--> Comunidad
+--> Australia
+
+- Comunidad. (ok)
+  Debe tener el botón que denote acción  
+  Programa conectados
+
+- Convenios 
+  Instituciones aliadas ( slide con dos imagenes y el icono de más (plus))
+
+- Seccion valores
+-> Honestidad:
+   Nuestro primer compromiso es brindar una información clara, precisa y
+   transparente.
+
+- Sección de formulario de registro (Conectaté con nostros)
+-> formulario
+   - Nombre completo
+   - Edad
+   - Telefono
+   - Correo
+   - Ciudad
+   - Observaciones 
+-> Red social de facebook  

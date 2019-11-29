@@ -143,15 +143,15 @@ svg {
 }
 .slide:nth-child(1) .slide__bg {
   left: 0;
-  background-image: url("../images/comunidad.jpg");
+  background-image: url("../images/Sidney.jpg");
   background-position: center;
 }
 .slide:nth-child(1) .slide__overlay-path {
-  fill: rgba(0,176,255,.3);
+  fill: rgba(0,176,255,.6);
 }
 @media (max-width: 991px) {
   .slide:nth-child(1) .slide__text {
-    background-color: rgba(0,176,255,.3);
+    background-color: rgba(0,176,255,.6);
   }
 }
 .slide:nth-child(2) {
@@ -163,11 +163,11 @@ svg {
   background-position: center;
 }
 .slide:nth-child(2) .slide__overlay-path {
-  fill: rgba(0,176,255,.3);
+  fill: rgba(0,176,255,.6);
 }
 @media (max-width: 991px) {
   .slide:nth-child(2) .slide__text {
-    background-color: rgba(0,176,255,.3);
+    background-color: rgba(0,176,255,.6);
   }
 }
 .slide:nth-child(3) {
@@ -179,11 +179,11 @@ svg {
   background-position: center;
 }
 .slide:nth-child(3) .slide__overlay-path {
-  fill: rgba(0,176,255,.3);
+  fill: rgba(0,176,255,.6);
 }
 @media (max-width: 991px) {
   .slide:nth-child(3) .slide__text {
-    background-color: rgba(0,176,255,.3);
+    background-color: rgba(0,176,255,.6);
   }
 }
 .slide:nth-child(4) {
@@ -195,11 +195,11 @@ svg {
   background-position: center;
 }
 .slide:nth-child(4) .slide__overlay-path {
-  fill: rgba(0,176,255,.3);
+  fill: rgba(0,176,255,.6);
 }
 @media (max-width: 991px) {
   .slide:nth-child(4) .slide__text {
-    background-color: rgba(0,176,255,.3);
+    background-color: rgba(0,176,255,.6);
   }
 }
 .slide__content {
