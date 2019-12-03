@@ -3,11 +3,15 @@
 
 <head>
   <meta charset="UTF-8">
+  <link rel="shortcut icon" type="image/x-icon" href="images/logo-ve-conecta.png">
+  <meta name="description" content="Somos una compañía conformada por un equipo de profesionales expertos y especializados en
+  ayudar a cumplir el sueño de estudiar, vivir y trabajar en el exterior.">
+  <meta name="author" content="Ricardo Andres Velasquez Alvis">
+  <meta name="keywords" content="agencia, estudios en el exterior, Australia, estudiantes, trabajo en el exterior,
+  vivir en el exterior, VeConecta, conecta con el mundo"/>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>VeConecta</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
-  <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Open+Sans'>
-  <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/main.min.css">
 </head>
@@ -37,7 +41,7 @@
         <li class="animated fadeInDown"><a href="#vision" class="item-menu">Visión</a></li>
         <li class="animated fadeInDown"><a href="#valores" class="item-menu">Valores</a></li>
         <li class="animated fadeInDown"><a href="#servicios" class="item-menu">Servicios</a></li>
-        <li class="animated fadeInDown"><a href="#servicios" class="item-menu">Convenios</a></li>
+        <li class="animated fadeInDown"><a href="#convenios" class="item-menu">Convenios</a></li>
         <li class="animated fadeInDown conecta"><a href="#conecta" class="item-menu">Conectate con nosotros</a></li>
 			</ul>
 	  </nav>
@@ -56,8 +60,8 @@
           </svg>
           <div class="slide__text">
             <h2 class="slide__text-heading">Comunidad</h2>
-            <p class="slide__text-desc">Genera la oportunidad para lograr grandes metas.</p>
-            <a class="slide__text-link">Project link</a>
+            <p class="slide__text-desc">Genera tu oportunidad para lograr grandes metas.</p>
+            <a class="slide__text-link" id="btnInformacion">Leer más</a>
           </div>
         </div>
       </div>
@@ -69,8 +73,7 @@
           </svg>
           <div class="slide__text">
             <h2 class="slide__text-heading">Futuro</h2>
-            <p class="slide__text-desc">Proyectate por el camino de un mejor futuro personal</p>
-            <a class="slide__text-link">Project link</a>
+            <p class="slide__text-desc">Proyectate por el camino hacia un mejor futuro personal</p>
           </div>
         </div>
       </div>
@@ -82,8 +85,7 @@
           </svg>
           <div class="slide__text">
             <h2 class="slide__text-heading">Estabilidad</h2>
-            <p class="slide__text-desc">Logra mejores oportunidades laborales únicas y satisfactoria.</p>
-            <a class="slide__text-link">Project link</a>
+            <p class="slide__text-desc">Logra mejores oportunidades laborales únicas y satisfactorias.</p>
           </div>
         </div>
       </div>
@@ -96,7 +98,6 @@
           <div class="slide__text">
             <h2 class="slide__text-heading">Trabajo en equipo</h2>
             <p class="slide__text-desc">Te acompañamos en todo momento</p>
-            <a class="slide__text-link">Project link</a>
           </div>
         </div>
       </div>
@@ -229,9 +230,72 @@
 
   <div class="convenios">
     <div class="convenios-contenedor">
-      
+      <h2 id="convenios">Convenios</h2>
+      <div class="escuelas">
+        <div class="escuela">
+          <img src="images/school.png" alt="">
+          <h4>Escuela 01</h4>
+        </div>
+        <div class="escuela">
+          <img src="images/school.png" alt="">
+          <h4>Escuela 02</h4>
+        </div>
+        <div class="escuela">
+          <img src="images/add.png" alt="">
+        </div>
+      </div>
     </div>
   </div>
+
+  <div class="conectate">
+    <div class="conectate-contenedor" id="conecta">
+      <h2>Conectate con nosotros</h2>
+      <div class="facebook">
+        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FVeConectaConElmundo&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" 
+        width="100%" height="100%" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+      </div>
+      <div class="formulario">
+        <form action="">
+          <input type="text" placeholder="Nombres" id="nombres" name="nombres">
+          <input type="text" placeholder="Apellidos" id="apellidos" name="apellidos">
+          <input type="number" placeholder="Edad" name="edad" id="edad">
+          <input type="text" placeholder="Teléfono" name="telefono" id="telefono">
+          <input type="email" placeholder="Correo eléctronico" name="correo" id="correo">
+          <input type="text" placeholder="Ciudad" name="ciudad" id="ciudad">
+          <button type="submit" id="botonEnviar">Conectarme</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="mensaje-boton" id="btnInformacion">
+    <p>i</p>
+  </div>
+
+  <div class="overlay-mensaje">
+    <div class="mensaje">
+      <div class="boton-cerrar" id="boton-cerrar">
+        cerrar
+      </div>
+      <div class="mensaje-contenedor">
+        <h4>Plan padrino</h4>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea error aperiam nihil nisi rem saepe, 
+          quos fugiat consectetur at similique voluptas doloremque, dolorum, veritatis eius dolores inventore eaque amet optio.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim quasi quae laboriosam deleniti minima. Quas voluptate
+            distinctio nesciunt tenetur expedita vitae dolorum mollitia. Animi libero quis quia omnis dolor neque.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam mollitia porro molestiae commodi, officiis sed? 
+          Itaque obcaecati voluptatibus dolorum optio delectus, magnam distinctio. Provident nemo, magnam consequuntur delectus eligendi accusamus.</p> 
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla ipsam, dolor expedita nesciunt quis vero 
+          exercitationem ea eligendi, assumenda repudiandae fuga ipsum, at fugit deserunt! Corrupti quam incidunt possimus. Ab.</p>    
+      </div>
+    </div>
+  </div>
+
+  <div class="contenedor-mensaje">
+    <p id="textoMensaje"></p>
+  </div>
+
+ 
 
   <footer>
     <div class="footer-contenedor">
@@ -241,6 +305,8 @@
         <li><a href="#vision">Visión</a></li>
         <li><a href="#valores">Valores</a></li>
         <li><a href="#servicios">Serivicio</a></li>
+        <li><a href="#convenios">Convenios</a></li>
+        <li><a href="#conecta">Conectate con nosotros</a></li>
       </ul>
     </div>
   </footer>

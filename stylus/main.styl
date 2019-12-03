@@ -175,6 +175,7 @@ nav.menu-options
 
 .valores-contenedor
   width 80%
+  max-width 1100px
   height auto
   margin 0 auto
   .contenido
@@ -218,6 +219,7 @@ nav.menu-options
     height 400px
   .contenido
     width 80%
+    max-width 1100px
     margin 0 auto
     h2
       font-size 30px
@@ -242,19 +244,177 @@ nav.menu-options
 
 .convenios
   width 100%
-  height 500px
-  background-color orange
+  height auto
+  background-color #F9F7F3
+  padding 40px 0px
+
+.convenios-contenedor
+  width 100%
+  height auto
+  h2
+    font-size 30px
+    margin-bottom 30px
+    text-align center
+    font-family "Anton", sans-serif
+    color #00b0ff
+  .escuelas
+    width 100%
+    text-align center
+    .escuela
+      width 150px
+      height 150px
+      margin 0 auto 60px auto
+      img
+        width 100%
+        height 100%
+      h4
+        font-size 15px
+        font-family "Anton", sans-serif
+        color #01579b
+      &:nth-child(3)
+        border 2px solid #2ab0e9
+        border-radius 50%
+        margin-bottom 0
+        img
+          width 50%
+          height 50%
+          margin-top 25%  
+
+.conectate
+  width 100%
+  height auto
+  padding 60px 0
+
+.conectate-contenedor
+  width 90%
+  margin 0 auto
+  h2
+    font-size 30px
+    margin-bottom 30px
+    text-align center
+    font-family "Anton", sans-serif
+    color #00b0ff
+  .facebook
+    width 100%
+    height 450px    
+  .formulario
+    margin 30px 0
+    text-align center
+    input
+      width 90%
+      height 40px
+      border 1px solid rgba(0,0,0,0.1)
+      border-radius 3px
+      margin 8px auto
+      font-size 16px
+      padding 0 5px
+      &:focus
+        border 1px solid rgba(0,0,0,0.3)
+        outline none
+    button
+      border none
+      border-radius 4px
+      width 120px
+      height 40px
+      font-family "Roboto", sans-serif
+      font-size 16px
+      background-color rgb(6,71,192)
+      color #fff
+      cursor pointer
+      margin-top 20px
+
+.contenedor-mensaje
+  display none
+  position absolute
+  top 10px
+  left 50%
+  transform translate(-50%, 0)
+  width 300px
+  height auto
+  padding 20px
+  border-radius 4px
+  background-color #263238
+  z-index 1004
+  p
+    color #fff
+    font-family "Roboto", sans-serif
+    font-size 16px
+
+.overlay-mensaje
+  display none
+  position fixed
+  width 100%
+  height 100vh
+  top 0
+  left 0
+  background-color #fff
+  z-index 100
+  overflow-y auto
+  .mensaje
+    width 100%
+    height 100%
+    position relative
+    padding 120px 0 120px 0
+  .boton-cerrar
+    width 80px
+    height 35px
+    position absolute
+    top 4%
+    right 10%
+    background-color #0267C1
+    color #fff
+    text-align center
+    line-height 35px
+    border-radius 3px
+    font-size 15px
+    font-family "Roboto", sans-serif
+    text-transform uppercase
+    cursor pointer
+
+.mensaje-contenedor
+  width 80%
+  margin 0 auto
+  h4
+    font-size 30px
+    font-family "Anton", sans-serif
+    color #00b0ff
+    margin-bottom 20px
+  p
+    font-size 16px
+    font-family "Roboto", sans-serif  
+    line-height 23px
+    margin 0 0 15px 0
+
+
+.mensaje-boton
+  position fixed
+  bottom 5%
+  left 5%
+  width 60px
+  height 60px
+  border-radius 50%
+  background-color #53FF45
+  z-index 20
+  text-align center
+  line-height 60px
+  box-shadow 0 5px 8px 2px rgba(0,0,0,0.2)
+  cursor pointer
+  p 
+    color #0A2E36
+    font-size 30px
+    font-family "Acme", sans-serif
 
 footer
   width 100%
   height auto
-  padding 30px 0
+  padding 50px 0
   background-color #01579b
 
 .footer-contenedor
   width 80%
   height auto
   margin 0 auto
+  display none
   ul
     margin 0
     text-align center
@@ -266,3 +426,289 @@ footer
       a
         text-decoration none
         color #ffffff
+
+@media (min-width 768px)
+
+  .header-content
+    .header-logo
+      img
+        width 160px
+        height 110px
+        margin-top 2px
+
+  nav.menu-options
+    ul
+      li  
+        a
+          font-size 26px
+
+  .mensaje-boton
+    width 70px
+    height 70px
+    line-height 70px
+    p
+      font-size 33px
+
+  .nosotros-contenedor
+    width 70%
+    .contenido
+      p
+        font-size 18px
+        line-height 22px
+
+  .mision-contenedor, .vision-contenedor
+    width 70%
+    .imagen
+      img
+        width 320px
+        height 320px
+    .contenido
+      p
+        font-size 18px
+        line-height 22px 
+
+  .valores-contenedor
+    .contenido
+      margin-bottom 20px
+      p
+        font-size 18px
+        line-height 22px
+
+  .conjunto-valores
+    display -webkit-flex
+    display -moz-flex
+    display -ms-flexbox
+    display -o-flex
+    display flex
+    justify-content space-between
+    flex-wrap wrap
+    .valor
+      width 46%
+      margin 12px  
+      p
+        font-size 18px
+        line-height 22px  
+
+  .servicios-contenedor
+    .imagen
+      height 500px
+    .contenido
+      display -webkit-flex
+      display -moz-flex
+      display -ms-flexbox
+      display -o-flex
+      display flex
+      justify-content center
+      flex-wrap wrap
+      h2
+        width 100%
+      .servicio
+        width 30%
+
+  .convenios-contenedor
+    .escuelas
+      display -webkit-flex
+      display -moz-flex
+      display -ms-flexbox
+      display -o-flex
+      display flex
+      justify-content space-between
+      align-items center
+      flex-wrap wrap
+      .escuela
+        width 160px
+        height 160px
+        &:nth-child(3)
+          width 120px
+          height 120px
+          img
+            width 30%
+            height 30%
+            margin-top 35%
+
+  .conectate-contenedor
+    display -webkit-flex
+    display -moz-flex
+    display -ms-flexbox
+    display -o-flex
+    display flex
+    justify-content center
+    flex-wrap wrap
+    h2
+      width 100%
+    .facebook, .formulario
+      width 50%
+
+  .mensaje-contenedor
+    p
+      font-size 18px
+      line-height 22px   
+
+@media (min-width 1024px)
+
+  .icon-menu--content
+    display none
+
+  .overlay-menu
+    display block
+    position absolute
+    top 0
+    left inherit
+    right 20px
+    width 800px
+    height 100px
+    z-index 10
+    background-color transparent
+
+  nav.menu-options
+    top 0
+    margin-top 80px
+    ul
+      margin 0
+      width 800px
+      height 100px
+      display -webkit-flex
+      display -moz-flex
+      display -ms-flexbox
+      display -o-flex
+      display flex
+      justify-content flex-end
+      li
+        height 100%
+        line-height auto 
+        width auto
+        text-align center
+        margin 0 10px
+        a
+          font-size 16px
+          width 100%
+          height auto
+          text-transform capitalize
+          transition all .3s ease-in-out
+          color #01579b
+        &:nth-child(7)
+          a
+            color #2176FF
+            border-bottom 1.5px solid #2176FF
+
+  .mensaje-boton
+    display none
+
+  .nosotros-contenedor
+    width 90%
+    max-width 1100px
+    display -webkit-flex
+    display -moz-flex
+    display -ms-flexbox
+    display -o-flex
+    display flex
+    align-items center  
+    .imagen
+      width 45%
+      img
+        width 220px
+        height 220px
+        box-shadow 0 10px 20px 10px rgba(0,0,0,0.15)
+    .contenido
+      width 45%
+      h2
+        margin 0 0 20px 0
+      p
+        font-size 17px
+        line-height 23px 
+
+  .mision-contenedor, .vision-contenedor
+    width 90%
+    max-width 1100px
+    height auto
+    margin 0 auto
+    display -webkit-flex
+    display -moz-flex
+    display -ms-flexbox
+    display -o-flex
+    display flex
+    align-items center 
+    justify-content center
+    .imagen
+      width 45%
+      order 2
+      img
+        width 250px
+        height 250px
+    .contenido
+      width 45%
+      order 1
+      h2
+        margin 0 0 20px 0
+      p
+        font-size 17px
+        line-height 23px
+
+  .vision-contenedor
+    .imagen
+      order 1
+    .contenido
+      order 2 
+
+  .valores-contenedor
+    .contenido
+      p
+        font-size 17px
+        line-height 23px
+
+  .conjunto-valores
+    .valor 
+      p
+        font-size 17px
+        line-height 23px 
+
+  .servicios-contenedor
+    .imagen
+      height 550px
+      background-attachment fixed
+    .contenido
+      h2
+        width 100%
+      .servicio
+        width 32%
+        img
+          width 110px
+          height 110px
+          margin 0 auto
+        h4
+          font-size 17px
+          margin-top 12px
+          line-height 23px  
+
+  .convenios-contenedor
+    .escuelas
+      width 70%
+      max-width 1000px
+      margin 0 auto
+      .escuela
+        width 150px
+        height 150px
+        h4
+          font-size 18px
+        &:nth-child(3)
+          width 100px
+          height 100px
+
+  .conectate-contenedor
+    width 75%
+    max-width 1100px
+    display -webkit-flex
+    display -moz-flex
+    display -ms-flexbox
+    display -o-flex
+    display flex
+    justify-content center
+    flex-wrap wrap
+    h2
+      width 100%  
+    .facebook
+      height 408px
+      max-width 380px
+    .formulario
+      margin 0 
+      max-width 400px 

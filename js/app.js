@@ -70,4 +70,74 @@ $(document).ready(function(){
     return false;
   });
 
+  var testEmail = /^[A-Z0-9._%+-]+@([A-Z0-9-]+\.)+[A-Z]{2,4}$/i;
+  $('#botonEnviar').on('click', function(){
+    if( $('#nombres').val()  === ''){
+      mostrarMensaje('NOMBRES','nombres')
+      return false
+    }else if( $('#apellidos').val()  === ''){
+      mostrarMensaje('APELLIDOS','apellidos')
+      return false
+    }else if( $('#edad').val() === ''){
+      mostrarMensaje('EDAD', 'edad')
+      return false
+    }else if( $('#telefono').val()  === ''){
+      mostrarMensaje('TELÉFONO','telefono')
+      return false
+    }else if( $('#correo').val()  === ''){
+      mostrarMensaje('CORREO ELÉCTRONICO','correo')
+      return false
+    }else if( $('#ciudad').val()  === ''){
+      mostrarMensaje('CIUDAD','ciudad')
+      return false
+    }else {
+
+    }
+  })
+
+  function mostrarMensaje(campo, valorID){
+    $(".contenedor-mensaje").slideDown()
+    if( valorID === 'correo' ){
+      if( testEmail.test($('#correo').val()) ){
+  
+      }else{
+        $('#'+valorID).focus();
+        setTimeout(function() {
+          $('#textoMensaje').text('Campo '+campo+' esta mal digitado.')      
+          $(".contenedor-mensaje").fadeOut(2500);
+        },0);
+        return false
+      }
+    }
+    $('#'+valorID).focus();
+    setTimeout(function() {
+      $('#textoMensaje').text('Campo '+campo+' no puede ser vacío.')      
+      $(".contenedor-mensaje").fadeOut(2500);
+    },0);
+  }
+
+
+  $('#btnInformacion').on('click', function(){
+    if( $('.overlay-mensaje').is(':hidden') ){
+      $('.overlay-mensaje').fadeIn();
+    }
+  })
+
+  $('#boton-cerrar').on('click', function(){
+    $('.overlay-mensaje').fadeOut();
+  })
+  
+
 });  
+
+WebFontConfig = {
+google: { families: [ 'Roboto', 'Open+Sans', 'Anton', 'Acme'] } };
+(function() {
+  var wf = document.createElement('script');
+  wf.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+  wf.type = 'text/javascript';
+  wf.async = 'true';
+  var s = document.getElementsByTagName('script')[0];
+  s.parentNode.insertBefore(wf, s);
+})();
+

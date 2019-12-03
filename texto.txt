@@ -1,4 +1,4 @@
-Palabras claves: 
+Palabras claves: (ok)
 agencias, estudios en el exterior, Australia, estudiantes, trabajo en el exterior,
 vivir en el exterior, VeConecta, conecta con el mundo, 
 
@@ -12,15 +12,15 @@ vivir en el exterior, VeConecta, conecta con el mundo,
   Debe tener el botón que denote acción  
   Programa conectados
 
-- Convenios 
+- Convenios (ok)
   Instituciones aliadas ( slide con dos imagenes y el icono de más (plus))
 
-- Seccion valores
+- Seccion valores (OK)
 -> Honestidad:
    Nuestro primer compromiso es brindar una información clara, precisa y
    transparente.
 
-- Sección de formulario de registro (Conectaté con nostros)
+- Sección de formulario de registro (Conectaté con nostros) (OK)
 -> formulario
    - Nombre completo
    - Edad

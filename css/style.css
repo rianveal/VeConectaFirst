@@ -143,7 +143,7 @@ svg {
 }
 .slide:nth-child(1) .slide__bg {
   left: 0;
-  background-image: url("../images/Sidney.jpg");
+  background-image: url("../images/australia.jpg");
   background-position: center;
 }
 .slide:nth-child(1) .slide__overlay-path {
@@ -175,7 +175,7 @@ svg {
 }
 .slide:nth-child(3) .slide__bg {
   left: -100%;
-  background-image: url("../images/trabajar.jpg");
+  background-image: url("../images/futuro.jpg");
   background-position: center;
 }
 .slide:nth-child(3) .slide__overlay-path {
